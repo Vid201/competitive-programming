@@ -1,5 +1,5 @@
 # UVa Online Judge
-Each problem has its own directory with 4 files: source code (.cpp), executable file (no extension), input file (input.txt) and output file (output.txt).
+Each problem has its own directory with 4 files: source code (main.cpp), executable file (main), input file (input.txt) and output file (output.txt).
 
 ## Compiling
 ```
