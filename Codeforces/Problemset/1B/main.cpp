@@ -15,15 +15,14 @@ int main() {
         r[0] = c[0] = '\0';
 
         scanf("%[A-Z]%d", r, &rn);
-        if (getchar() == 'C') {
+        if (getchar() == 'C')
             scanf("%d\n", &cn);
-        }
 
         if (cn == 0) {
             len = strlen(r);
-            for (i = 0; i < len; ++i) {
+            for (i = 0; i < len; ++i)
                 cn += (r[i] - 'A') * pow26[len - i - 1];
-            }
+
             if (len > 1)
                 cn += prePow26[len - 1];
 
@@ -36,7 +35,7 @@ int main() {
                     break;
                 }
             }
-            for (i = 0; i < len; i++) {
+            for (i = 0; i < len; ++i) {
                 k = (cn - 1) / pow26[len - i - 1];
                 c[i] = 'A' + k;
                 cn -= k * pow26[len - i - 1];
